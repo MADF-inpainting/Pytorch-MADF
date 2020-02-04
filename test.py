@@ -14,10 +14,10 @@ import os
 
 parser = argparse.ArgumentParser()
 # training options
-parser.add_argument('--list_file', type=str, default='place2_test_1.2w_large_2k')
-parser.add_argument('--snapshot', type=str, default='output/snapshots/default/ckpt/1000000.pth.convert')
+parser.add_argument('--list_file', type=str, default='')
+parser.add_argument('--snapshot', type=str, default='')
 parser.add_argument('--n_refinement_D', type=int, default=2)
-parser.add_argument('--image_size', type=int, default=256)
+parser.add_argument('--image_size', type=int, default=512)
 parser.add_argument('--result_dir', type=str, default='results')
 args = parser.parse_args()
 
