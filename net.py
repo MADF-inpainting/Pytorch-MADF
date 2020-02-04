@@ -4,14 +4,14 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from normalization import PN
-import vgg
+from torchvision import models
 
 upsampling = "bilinear"
     
 class VGG16FeatureExtractor(nn.Module):
     def __init__(self):
         super().__init__()
-        vgg16 = vgg.vgg16(pretrained=True)
+        vgg16 = models.vgg16(pretrained=True)
         self.enc_1 = nn.Sequential(*vgg16.features[:5])
         self.enc_2 = nn.Sequential(*vgg16.features[5:10])
         self.enc_3 = nn.Sequential(*vgg16.features[10:17])
