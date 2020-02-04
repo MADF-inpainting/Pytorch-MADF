@@ -9,6 +9,7 @@ from util.image import unnormalize
 from torchvision.utils import save_image
 import PIL
 import opt
+import os
 
 
 parser = argparse.ArgumentParser()
@@ -17,6 +18,7 @@ parser.add_argument('--list_file', type=str, default='place2_test_1.2w_large_2k'
 parser.add_argument('--snapshot', type=str, default='output/snapshots/default/ckpt/1000000.pth.convert')
 parser.add_argument('--n_refinement_D', type=int, default=2)
 parser.add_argument('--image_size', type=int, default=256)
+parser.add_argument('--result_dir', type=str, default='results')
 args = parser.parse_args()
 
 def evaluate(model, dataset, device, path):
@@ -33,11 +35,15 @@ def evaluate(model, dataset, device, path):
 
         name = name[0]
         name = name.split("/")[-1].replace('.jpg', '.png')
-        save_image(unnormalize(output_comp), path+name)
-        save_image(unnormalize(gt), "gt_"+path+name)
+        save_image(unnormalize(output_comp), path + '/' + name)
+        save_image(unnormalize(gt), "gt_" + path + '/' + name)
 
 if __name__ == '__main__':
     device = torch.device('cuda')
+    if not os.path.exists(args.result_dir):
+        os.makedirs(args.result_dir)
+    if not os.path.exists('gt_' + args.result_dir):
+        os.makedirs('gt_' + args.result_dir)
     
     size = (args.image_size, args.image_size)
     img_transform = transforms.Compose(
@@ -52,6 +58,6 @@ if __name__ == '__main__':
     load_ckpt(args.snapshot, [('model', model)])
     
     model.eval()
-    evaluate(model, dataset_val, device, 'result_place2/')
+    evaluate(model, dataset_val, device, args.result_dir)
 
 
