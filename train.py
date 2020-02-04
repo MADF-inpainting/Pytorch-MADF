@@ -41,11 +41,12 @@ class InfiniteSampler(data.sampler.Sampler):
 
 parser = argparse.ArgumentParser()
 # training options
-parser.add_argument('--train_root', type=str, default='/data_large')
-parser.add_argument('--test_root', type=str, default='/test_large_1.2w')
-parser.add_argument('--mask_root', type=str, default='/mask_random_with_1.2w')
+parser.add_argument('--train_root', type=str, default='')
+parser.add_argument('--test_root', type=str, default='')
+parser.add_argument('--mask_root', type=str, default='')
 parser.add_argument('--save_dir', type=str, default='./output/snapshots/default')
-parser.add_argument('--log_dir', type=str, default='./log/default/log')
+parser.add_argument('--log_dir', type=str, default='./log/default/')
+parser.add_argument('--log_file', type=str, default='log')
 parser.add_argument('--lr', type=float, default=2e-4)
 parser.add_argument('--max_iter', type=int, default=10000000)
 parser.add_argument('--batch_size', type=int, default=6)
@@ -110,7 +111,7 @@ if args.resume:
         args.resume, [('model', model)], [('gen_optimizer', gen_optimizer)])
     for param_group in gen_optimizer.param_groups:
         param_group['lr'] = lr
-    with open(args.log_dir, 'a') as writer:
+    with open(args.log_dir + '/' + args.log_file, 'a') as writer:
         writer.write('===================Starting from iter {:d}==================\n'.format(start_iter))
 torch.backends.cudnn.benchmark = True
 model = DataParallel_withLoss(model, VGG16FeatureExtractor(), args)
@@ -136,7 +137,7 @@ for i in tqdm(range(start_iter, args.max_iter)):
             value = loss_dict[key]
             log += "loss_{:s} : ".format(key)+"{:f} ".format(value.item())
         log += "\n"
-        with open(args.log_dir, 'a') as writer:
+        with open(args.log_dir + '/' + args.log_file, 'a') as writer:
             writer.write(log)
 
     del loss_dict
