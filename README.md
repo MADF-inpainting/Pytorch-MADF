@@ -40,5 +40,7 @@ An Implement of MADF (Image Inpainting by Single-Shot Cascaded Refinement with M
       $ python test.py --list_file test_list --snapshot model_path
       
   ## Pretrained models
+  
   [Places2](https://drive.google.com/open?id=10iXhPEiOiNzTbM-Yc1GRy2-D9Xjmd1cI)|[Celeba-HQ]()|[PSV]()
-  All the released models are trained with images of resolution 512 x 512 and the training mask dataset. 
+  
+  -All the released models are trained with images of resolution 512 x 512 and the training mask dataset. 
