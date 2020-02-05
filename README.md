@@ -17,29 +17,20 @@ An Implement of MADF (Image Inpainting by Single-Shot Cascaded Refinement with M
         $ cd Pytorch-MADF-master
       
   ## download datasets
-  - Firstly, you need to make some directories in the root path
   
-        $ mkdir data
-        $ cd data
-        $ mkdir train
-        $ mkdir val
-        $ mkdir test   
+  ## Mask sets
+  - Mask sets can be download [here](https://nv-adlr.github.io/publication/partialconv-inpainting). We train all the datasets with the same mask sets.
+
 
   ### Places2
-  - You can download this datasets [here](http://places2.csail.mit.edu/download.html). We use the High-resolution version in this repo.
-  
-  - After you have download the datasets, copy ImageNet(here I only use 3137 images) datsets to ***/data/train***, then you have ***/data/train/ImageNet*** path, and training images are stored in ***/data/train/ImageNet***
-  
+  - You can download this dataset [here](http://places2.csail.mit.edu/download.html). We use the High-resolution version in this repo.
+    
   
   ### Celeba-HQ
-  - You can download this datasets [here]() **Set5** dataset is used as **val data**, you can download it [here](http://data.csail.mit.edu/places/places365/val_large.tar).
-  
-  - After you download **Set5**, please store it in ***/data/val/*** , then you have ***/data/val/Set5*** path, and val images are stored in ***/data/val/Set5***
+  - You can download this dataset [here]().
   
   ### Paris street view
-  - **Set14** dataset is used as **test data**, you can download it [here](http://data.csail.mit.edu/places/places365/test_large.tar).
-  
-  - After you download **Set14**, please store it in ***/data/test/*** , then you have ***/data/test/Set14*** path, and val images are stored in ***/data/test/Set14***
+  - You can download this dataset [here]().
  
   ## training
   
