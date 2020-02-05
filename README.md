@@ -6,7 +6,6 @@ An Implement of MADF (Image Inpainting by Single-Shot Cascaded Refinement with M
   - Pytorch 1.0.0
   - python 3.*
   - numpy 1.13.1
-  - scipy 0.17.0
   
   
 # Usages
