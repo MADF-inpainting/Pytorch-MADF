@@ -38,3 +38,6 @@ An Implement of MADF (Image Inpainting by Single-Shot Cascaded Refinement with M
   ## testing
   
       $ python test.py --list_file test_list --snapshot model_path
+      
+  ## Pretrained models
+  [Places2](https://drive.google.com/open?id=10iXhPEiOiNzTbM-Yc1GRy2-D9Xjmd1cI)|[Celeba-HQ]()|[PSV]()
