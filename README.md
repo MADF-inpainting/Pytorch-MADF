@@ -17,8 +17,8 @@ An Implement of MADF (Image Inpainting by Single-Shot Cascaded Refinement with M
       
   ## download datasets
   
-  ## Mask sets
-  - Mask sets can be download [here](https://nv-adlr.github.io/publication/partialconv-inpainting). We train all the datasets with the same mask sets.
+  ## Mask datasets
+  - Mask datasets can be download [here](https://nv-adlr.github.io/publication/partialconv-inpainting). We train all the datasets with the same mask datasets. 
 
 
   ### Places2
@@ -41,3 +41,4 @@ An Implement of MADF (Image Inpainting by Single-Shot Cascaded Refinement with M
       
   ## Pretrained models
   [Places2](https://drive.google.com/open?id=10iXhPEiOiNzTbM-Yc1GRy2-D9Xjmd1cI)|[Celeba-HQ]()|[PSV]()
+  All the released models are trained with images of resolution 512 x 512 and the training mask dataset. 
