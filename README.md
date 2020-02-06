@@ -44,3 +44,10 @@ An Implement of MADF (Image Inpainting by Single-Shot Cascaded Refinement with M
   [Places2](https://drive.google.com/open?id=10iXhPEiOiNzTbM-Yc1GRy2-D9Xjmd1cI)|[Celeba-HQ]()|[PSV]()
   
   -All the released models are trained with images of resolution 512 x 512 and the training mask dataset. 
+  
+  ## Experimental Results
+  | GT | maked input | inpainting result|
+  |:-----------------:|:-----------------:|:-----------------:|
+  | ![Alt test](/examples/places2/case1.png)| ![Alt test](/examples/places2/case1_input.png)| ![Alt test](/examples/places2/case1_output.png)||
+  | ![Alt test](/examples/places2/case2.png)| ![Alt test](/examples/places2/case2_input.png)| ![Alt test](/examples/places2/case2_output.png)||
+ 
