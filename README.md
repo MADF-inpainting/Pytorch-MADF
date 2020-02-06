@@ -48,6 +48,6 @@ An Implement of MADF (Image Inpainting by Single-Shot Cascaded Refinement with M
   ## Experimental Results
   | GT | maked input | inpainting result|
   |:-----------------:|:-----------------:|:-----------------:|
-  | ![Alt test](/examples/places2/case2.png)| ![Alt test](/examples/places2/case2_input.png)| ![Alt test](/examples/places2/case1_output.png)||
-  | ![Alt test](/examples/places2/case4.png)| ![Alt test](/examples/places2/case4_input.png)| ![Alt test](/examples/places2/case2_output.png)||
+  | ![Alt test](/examples/places2/case2.png)| ![Alt test](/examples/places2/case2_input.png)| ![Alt test](/examples/places2/case2_output.png)||
+  | ![Alt test](/examples/places2/case4.png)| ![Alt test](/examples/places2/case4_input.png)| ![Alt test](/examples/places2/case4_output.png)||
  
