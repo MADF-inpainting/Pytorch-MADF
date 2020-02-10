@@ -18,15 +18,15 @@ An Implement of MADF (Image Inpainting by Single-Shot Cascaded Refinement with M
   ## download datasets
   
   ## Mask datasets
-  - Mask datasets can be download [here](https://nv-adlr.github.io/publication/partialconv-inpainting). We train all the datasets with the same mask datasets. 
+  - Mask datasets can be download [here](https://nv-adlr.github.io/publication/partialconv-inpainting). We train all the datasets with the same mask datasets. Notice that mask images must be 0-255 images.
 
 
   ### Places2
   - You can download this dataset [here](http://places2.csail.mit.edu/download.html). We use the High-resolution version in this repo.
     
   
-  ### Celeba-HQ
-  - You can download this dataset [here](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html). 
+  ### Celeba
+  - You can download this dataset [here](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html). We crop and align the images before training and testing.
   
   ### Paris street view
   - You can download this dataset [here](https://drive.google.com/open?id=1YXEMiAuaVjMm4jmoZPvMyddAmAyRPVfV).
