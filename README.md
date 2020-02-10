@@ -50,4 +50,6 @@ An Implement of MADF (Image Inpainting by Single-Shot Cascaded Refinement with M
   |:-----------------:|:-----------------:|:-----------------:|
   | ![Alt test](/examples/places2/case2.png)| ![Alt test](/examples/places2/case2_input.png)| ![Alt test](/examples/places2/case2_output.png)||
   | ![Alt test](/examples/places2/case4.png)| ![Alt test](/examples/places2/case4_input.png)| ![Alt test](/examples/places2/case4_output.png)||
+  | ![Alt test](/examples/celeba/case1.png)| ![Alt test](/examples/celeba/case1_input.png)| ![Alt test](/examples/celeba/case1_output.png)||
+  | ![Alt test](/examples/celeba/case2.png)| ![Alt test](/examples/celeba/case2_input.png)| ![Alt test](/examples/celeba/case2_output.png)||
  
