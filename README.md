@@ -29,7 +29,7 @@ An Implement of MADF (Image Inpainting by Single-Shot Cascaded Refinement with M
   - You can download this dataset [here](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html). 
   
   ### Paris street view
-  - You can download this dataset [here]().
+  - You can download this dataset [here](https://drive.google.com/open?id=1YXEMiAuaVjMm4jmoZPvMyddAmAyRPVfV).
  
   ## training
   
@@ -41,7 +41,7 @@ An Implement of MADF (Image Inpainting by Single-Shot Cascaded Refinement with M
       
   ## Pretrained models
   
-  [Places2](https://drive.google.com/open?id=10iXhPEiOiNzTbM-Yc1GRy2-D9Xjmd1cI)|[Celeba-HQ]()|[PSV]()
+  [Places2](https://drive.google.com/open?id=10iXhPEiOiNzTbM-Yc1GRy2-D9Xjmd1cI)|[Celeba-HQ](https://drive.google.com/open?id=1Jay0Ockr2iEW2FPHeFMkgczBLF_ZQaSy)|[PSV]()
   
   - All the released models are trained with images of resolution 512 x 512 and the training mask dataset. 
   
