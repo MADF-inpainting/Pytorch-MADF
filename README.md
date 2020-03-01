@@ -1,6 +1,6 @@
 # Pytorch-MADF
 
-An Implement of MADF (Image Inpainting by Single-Shot Cascaded Refinement with Mask Awareness). This is a temporally anonymous repo for reproducing results of our cvpr2020 submission.
+An Implement of MADF (Image Inpainting by Cascaded Refinement with Mask Awareness). This is a temporally anonymous repo for reproducing results of our eccv2020 submission.
 
 # Requirements
   - Pytorch 1.0.0
@@ -12,7 +12,7 @@ An Implement of MADF (Image Inpainting by Single-Shot Cascaded Refinement with M
   ## downlaod repo
   - download this repo by the following instruction:
   
-        $ git clone https://github.com/cvpr2020-inpainting-anonymous/Pytorch-MADF.git
+        $ git clone https://github.com/eccv2020-inpainting-anonymous/Pytorch-MADF.git
         $ cd Pytorch-MADF-master
       
   ## download datasets
