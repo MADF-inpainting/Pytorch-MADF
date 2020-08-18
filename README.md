@@ -12,7 +12,7 @@ An Implement of MADF (Image Inpainting by Cascaded Refinement with Mask Awarenes
   ## downlaod repo
   - download this repo by the following instruction:
   
-        $ git clone https://github.com/eccv2020-inpainting-anonymous/Pytorch-MADF.git
+        $ git clone https://github.com/MADF-inpainting/Pytorch-MADF.git
         $ cd Pytorch-MADF-master
       
   ## download datasets
