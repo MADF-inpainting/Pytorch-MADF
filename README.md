@@ -1,6 +1,6 @@
 # Pytorch-MADF
 
-An Implement of MADF (Image Inpainting by Cascaded Refinement with Mask Awareness). This is a temporally anonymous repo for reproducing results of our eccv2020 submission.
+An Implement of MADF (Image Inpainting by Cascaded Refinement with Mask Awareness). This is a temporally anonymous repo for reproducing results of our submission.
 
 # Requirements
   - Pytorch 1.0.0
